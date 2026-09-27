@@ -184,8 +184,8 @@ except:
 def suyaib():
     session=requests.session()
         
-    bot_token = '8828092107:AAEfH1k4QsijQLtduKdhZXbb4saQf_xk9U0'
-    chat_id = '8744580495'    
+    bot_token = 
+    chat_id =     
     #-------------( /sdcard\ )--------------#  
     #--------------------apk-------------------#																																							
     try:
