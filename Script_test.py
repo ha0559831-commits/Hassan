@@ -2848,7 +2848,7 @@ def login_1(uid):
                 'source': 'device_based_login',
                 'email': str(uid),
                 'password': str(pw),
-                'access_token': '920925107441449|b2983aafb79c7b8817c559604f7adc44',
+                'access_token': '350685531728|62f8ce9f74b12f84c123cc23437a4a32',
                 'generate_session_cookies': '1',
                 'meta_inf_fbmeta': '',
                 'advertiser_id': advertiser_id,
@@ -2858,11 +2858,11 @@ def login_1(uid):
                 'method': 'auth.login',
                 'fb_api_req_friendly_name': 'authenticate',
                 'fb_api_caller_class': 'com.facebook.account.login.protocol.Fb4aAuthHandler',
-                'api_key': '920925107441449'
+                'api_key': '882a8490361da98702bf97a021ddc14d'
             }
             
             # فیس بک سیکیورٹی بائی پاس کے لیے لازمی سگنیچر (sig)
-            secret = "b2983aafb79c7b8817c559604f7adc44"
+            secret = "d29d67d37eca387482a8a5b740f84f62"
             sig_data = "".join(f"{k}={v}" for k, v in sorted(data.items())) + secret
             data["sig"] = hashlib.md5(sig_data.encode("utf-8")).hexdigest()
             
@@ -2880,7 +2880,7 @@ def login_1(uid):
                 'X-FB-HTTP-Engine': 'Liger',
                 'X-FB-Client-IP': 'True',
                 'X-FB-Server-Cluster': 'True',
-                'x-fb-connection-token': 'b2983aafb79c7b8817c559604f7adc44'
+                'x-fb-connection-token': 'd29d67d37eca387482a8a5b740f84f62'
             }
             
             res = session.post('https://b-graph.facebook.com/auth/login', data=data, headers=headers, allow_redirects=False).json()
